@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>collocation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="/css/wee.css" />
+</head>
+
+<body>
+  <div class="container">
+      <div class="header">
+      <h1>Admin</h1>
+      <a href="admin.html" class="back-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+        </svg>
+        Back home
+      </a>
+    </div>
+
+    <form action="/admin" method="POST" enctype="multipart/form-data">
+      
+      <!-- Glass -->
+      <div class="product-section">
+        <h2 class="section-title">Glass</h2>
+
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="form-group">
+          <label for="description_glass">Description:</label>
+          <textarea name="description_glass" id="description_glass" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="glass_name">Size:</label>
+          <select name="glass_name" id="glass_name" class="input-select">
+            <option value="default">--Please select a size--</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_glass" value="white" /> White</label>
+            <label><input type="radio" name="productcolor_glass" value="black" /> Black</label>
+            <label><input type="radio" name="productcolor_glass" value="blue" /> Blue</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price_glass">Price:</label>
+          <input type="number" name="price_glass" id="price_glass" min="0" max="700" step="10" value="0" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="quantity_glass">Quantity:</label>
+          <input type="number" name="quantity_glass" id="quantity_glass" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="startdate_glass">Start Date:</label>
+          <input type="date" name="startdate_glass" id="startdate_glass" class="input-date" />
+        </div>
+      </div>
+
+      <!-- Hat -->
+      <div class="product-section">
+        <h2 class="section-title">Hat</h2>
+
+         <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+        <div class="form-group">
+          <label for="description_hat">Description:</label>
+          <textarea name="description_hat" id="description_hat" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="hat_name">Size:</label>
+          <select name="hat_name" id="hat_name" class="input-select">
+            <option value="default">--Please select a size--</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_hat" value="white" /> White</label>
+            <label><input type="radio" name="productcolor_hat" value="black" /> Black</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price_hat">Price:</label>
+          <input type="number" name="price_hat" id="price_hat" min="0" max="700" step="10" value="0" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="quantity_hat">Quantity:</label>
+          <input type="number" name="quantity_hat" id="quantity_hat" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="startdate_hat">Start Date:</label>
+          <input type="date" name="startdate_hat" id="startdate_hat" class="input-date" />
+        </div>
+      </div>
+
+      <!-- Umbrella -->
+      <div class="product-section">
+        <h2 class="section-title">Umbrella</h2>
+
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="form-group">
+          <label for="description_umbrella">Description:</label>
+          <textarea name="description_umbrella" id="description_umbrella" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_umbrella" value="white" /> White</label>
+            <label><input type="radio" name="productcolor_umbrella" value="black" /> Black</label>
+            <label><input type="radio" name="productcolor_umbrella" value="blue" /> Blue</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price_umbrella">Price:</label>
+          <input type="number" name="price_umbrella" id="price_umbrella" min="0" max="700" step="10" value="0" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="quantity_umbrella">Quantity:</label>
+          <input type="number" name="quantity_umbrella" id="quantity_umbrella" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="startdate_umbrella">Start Date:</label>
+          <input type="date" name="startdate_umbrella" id="startdate_umbrella" class="input-date" />
+        </div>
+      </div>
+
+      <!-- Brooch -->
+      <div class="product-section">
+        <h2 class="section-title">Brooch</h2>
+
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="form-group">
+          <label for="description_brooch">Description:</label>
+          <textarea name="description_brooch" id="description_brooch" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="brooch_name">Size:</label>
+          <select name="brooch_name" id="brooch_name" class="input-select">
+            <option value="default">--Please select a size--</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_brooch" value="black" /> Black</label>
+            <label><input type="radio" name="productcolor_brooch" value="gray" /> Gray</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price_brooch">Price:</label>
+          <input type="number" name="price_brooch" id="price_brooch" min="0" max="700" step="10" value="0" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="quantity_brooch">Quantity:</label>
+          <input type="number" name="quantity_brooch" id="quantity_brooch" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="startdate_brooch">Start Date:</label>
+          <input type="date" name="startdate_brooch" id="startdate_brooch" class="input-date" />
+        </div>
+      </div>
+
+      <!-- Book -->
+      <div class="product-section">
+        <h2 class="section-title">Book</h2>
+
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="form-group">
+          <label for="description_book">Description:</label>
+          <textarea name="description_book" id="description_book" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_book" value="black" /> Black</label>
+            <label><input type="radio" name="productcolor_book" value="blue" /> Blue</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price_book">Price:</label>
+          <input type="number" name="price_book" id="price_book" min="0" max="700" step="10" value="0" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="quantity_book">Quantity:</label>
+          <input type="number" name="quantity_book" id="quantity_book" class="input-number" />
+        </div>
+
+        <div class="form-group">
+          <label for="startdate_book">Start Date:</label>
+          <input type="date" name="startdate_book" id="startdate_book" class="input-date" />
+        </div>
+      </div>
+
+      <!-- Pen -->
+      <div class="product-section">
+        <h2 class="section-title">Pen</h2>
+
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                <div class="file-upload-content">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01" />
+                    </svg>
+                    <div class="file-upload-text">
+                    <span>Drag and drop here, or</span>
+                    <label for="productimage">
+                        Upload a file
+                        <input type="file" name="productimage" id="productimage" accept="image/*">
+                    </label>
+                    </div>
+                    <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="form-group">
+          <label for="description_pen">Description:</label>
+          <textarea name="description_pen" id="description_pen" rows="5" maxlength="500" placeholder="รายละเอียดสินค้า" class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Color:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="productcolor_pen" value="red" /> Red</label>
+            <label><input type="radio" name="productcolor_pen" value="black" /> Black</label>
+            <label><input type="radio" name="productcolor_pen" value="blue" /> Blue</label>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:1.5rem;">
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

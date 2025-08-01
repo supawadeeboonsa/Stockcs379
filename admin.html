@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Menu</title>
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="admin-wrapper">
+
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <img src="/images/logocs.png" alt="Logo" class="sidebar-logo">
+            <h2 class="sidebar-title">CS-MJU</h2>
+        </div>
+
+
+        <div>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+          <label for="menu-toggle" class="menu-toggle-label">☰</label>
+          <ul class="sidebar-menu">
+            <li><a href="shirt.html" class="menu-item">Shirt.</a></li>
+            <li><a href="ิbag.html" class="menu-item">Beg.</a></li>
+            <li><a href="wee.html" class="menu-item">Misc.</a></li>
+            <li><a href="#" class="menu-item">Support</a></li>
+            <li><a href="#" class="menu-item">Settings</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="menu-item">
+            <i class="fas fa-sign-out-alt menu-icon"></i>
+            Logout
+          </a>
+        </div>
+      </nav>
+
+    <main class="main-content">
+      <header class="main-header">
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search..." class="search-input">
+        </div>
+        <div class="user-profile">
+          <div class="user-avatar">
+            <img src="/images/por.jpg" alt="User Avatar">
+          </div>
+          <span class="user-name">Supawadee boonsa</span>
+        </div>
+      </header>
+
+      <h1 class="welcome-heading">Welcome to Admin Stock-CSMJU</h1>
+
+      <section class="sales-analytics-section">
+        <h2 class="section-title">Sales Analytics</h2>
+        <div class="chart-container">
+          <img src="https://placehold.co/800x300/f0f0f0/cccccc?text=Sales+Chart+Placeholder" alt="Sales Chart" class="sales-chart-placeholder">
+        </div>
+      </section>
+
+      <section class="most-popular-items-section">
+        <h2 class="section-title">Most Popular Items</h2>
+        <div class="popular-items-list">
+          <div class="popular-item">
+            <img src="https://placehold.co/50x50/ffcc66/333333?text=P" alt="Special Chicken" class="item-image">
+            <div class="item-details">
+              <p class="item-name">SHIRT</p>
+              <p class="item-orders">0 Orders <span class="item-price">0 Baht</span></p>
+            </div>
+          </div>
+          <div class="popular-item">
+            <img src="https://placehold.co/50x50/ff9966/333333?text=C" alt="Chew Mein" class="item-image">
+            <div class="item-details">
+              <p class="item-name">BEG CSMJU</p>
+              <p class="item-orders">0 Orders <span class="item-price">0 Baht</span></p>
+            </div>
+          </div>
+          <div class="popular-item">
+            <img src="https://placehold.co/50x50/cc99ff/333333?text=B" alt="BBQ Park" class="item-image">
+            <div class="item-details">
+              <p class="item-name">Umbrella</p>
+              <p class="item-orders">0 Orders <span class="item-price">0 Baht</span></p>
+            </div>
+          </div>
+          <div class="popular-item">
+            <img src="https://placehold.co/50x50/99ccff/333333?text=M" alt="Masala Pasta" class="item-image">
+            <div class="item-details">
+              <p class="item-name">Book</p>
+              <p class="item-orders">0 Orders <span class="item-price">0 Baht</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/stylesss.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Admin</h1>
+            <a href="admin.html" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                Back home
+            </a>
+        </div>
+
+        <form action="/admin" method="POST" enctype="multipart/form-data">
+            <h2>Shirt</h2>
+
+            <!-- Product Image -->
+            <div>
+                <label for="productimage">Product Image:</label>
+                <div class="file-upload-area">
+                    <div class="file-upload-content">
+                        <!-- SVG Icon for File Upload -->
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-4.586-4.586a2 2 0 00-2.828 0L4 12m16-4a2 2 0 11-4 0 2 2 0 014 0zM12 18v.01"/>
+                        </svg>
+                        <div class="file-upload-text">
+                            <span>Drag and drop here, or</span>
+                            <label for="productimage">
+                                Upload a file
+                                <input type="file" name="productimage" id="productimage" accept="image/*" >
+                            </label>
+                        </div>
+                        <p class="file-upload-note">PNG, JPG, GIF up to 10MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- รายละเอียด -->
+            <div>
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" rows="5" maxlength="500" ></textarea>
+            </div>
+
+            <!-- ขนาด -->
+            <div>
+                <p>Sizes:</p>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="shirt_size[]" value="XS"> XS</label>
+                    <label><input type="checkbox" name="shirt_size[]" value="S"> S</label>
+                    <label><input type="checkbox" name="shirt_size[]" value="M"> M</label>
+                    <label><input type="checkbox" name="shirt_size[]" value="L"> L</label>
+                    <label><input type="checkbox" name="shirt_size[]" value="XL"> XL</label>
+                    <label><input type="checkbox" name="shirt_size[]" value="XXL"> XXL</label>
+                </div>
+            </div>
+
+            <!-- สี -->
+            <div>
+                <p>Color:</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="productcolor" value="white" > White</label>
+                    <label><input type="radio" name="productcolor" value="black"> Black</label>
+                    <label><input type="radio" name="productcolor" value="blue"> Blue</label>
+                </div>
+            </div>
+
+            <!-- ราคา -->
+            <div>
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" min="0" max="700" step="10" >
+            </div>
+
+            <!-- จำนวน -->
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" >
+            </div>
+
+            <!-- วันที่เริ่มขาย -->
+            <div>
+                <label for="startdate">Start Date:</label>
+                <input type="date" name="startdate" id="startdate" >
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
