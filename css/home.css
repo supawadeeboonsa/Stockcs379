@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -60,7 +61,7 @@ ul {
     padding: 0;
 }
 
-
+/* Header */
 .header {
     background-color: #fff;
     padding: 20px 0;
@@ -152,7 +153,7 @@ ul {
 }
 
 .nav-links li a:hover {
-    color: #79b8f6; 
+    color: #79b8f6; /* Example hover color */
 }
 
 .shop-by-categories {
@@ -198,7 +199,7 @@ ul {
     margin-left: 5px;
 }
 
-
+/* Hero Section */
 .hero {
     background-color: #fff;
     padding: 80px 0;
@@ -254,7 +255,7 @@ ul {
     display: block;
 }
 
-
+/* Categories Section */
 .categories-section {
     text-align: center;
     padding: 80px 0;
@@ -270,7 +271,7 @@ ul {
     margin-bottom: 50px;
 }
 
-
+/* General Styles (จากตัวอย่างเดิม) */
 .categories-section {
     text-align: center;
     padding: 80px 0;
@@ -302,7 +303,7 @@ ul {
     color: inherit;
     display: block;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
@@ -346,3 +347,98 @@ ul {
     color: #999;
     font-size: 0.9rem;
 }
+
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .user-actions {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; /* เผื่อเมนูเยอะ ให้ขึ้นบรรทัดใหม่ */
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    padding: 8px 0;
+    display: block;
+  }
+
+  .hero {
+    padding: 40px 0; 
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 5px 0 15px;
+  }
+
+  .shop-now-btn {
+    padding: 12px 24px;
+  }
+
+ .categories-grid {
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+  }
+
+  .category-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .user-profile {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .cart {
+    justify-content: center;
+  }
+
+  .highlight {
+    font-size: 100%;
+    font-weight: 600;
+    color: #999;
+  }
+
+  .description {
+    font-size: 80%;
+    color: #666;
+    margin-bottom: 30px;
+ }
+}
+
+
+
+

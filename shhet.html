@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดสินค้า - CS-Cap</title>
+  <link rel="stylesheet" href="/css/shopp.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap&subset=thai" rel="stylesheet">
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image-section">
+      <div class="main-image-wrapper">
+        <img src="/images/hat.png" alt="CS Cap">
+      </div>
+    </div>
+
+    <div class="product-details-section">
+      <div class="product-header">
+        <span class="category">CAP</span>
+        <h1 class="product-title">CS-Cap</h1>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">(0 Review)</span>
+        </div>
+      </div>
+      
+      <div class="price-info">
+        <span class="current-price">79 Baht</span>
+      </div>
+
+      <p class="description">
+        หมวกผ้าคุณภาพดีจากค่ายคอมพิวเตอร์ "COMCAMP" ที่ระลึกครบรอบ 30 ปี ดีไซน์เรียบเท่ มีสายปรับขนาดด้านหลัง ใส่ได้ทุกเพศทุกวัย เหมาะสำหรับทุกกิจกรรมกลางแจ้ง.
+      </p>
+
+      <div class="product-options">
+        <div class="size-volume">
+          <h3>ขนาด</h3>
+          <div class="size-options">
+            <button class="size-btn">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+          </div>
+        </div>
+
+        <div class="quantity-selector">
+          <button class="quantity-btn">-</button>
+          <input type="text" value="1" readonly>
+          <button class="quantity-btn">+</button>
+        </div>
+
+        <div class="action-buttons">
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-section">
+    <h2>รีวิวจากลูกค้า</h2>
+    <div class="review-list">
+      <div class="review-item">
+        <div class="review-header">
+          <span class="reviewer-name">BaCon Boonsa</span>
+          <span class="review-date">1 สิงหาคม 2568</span>
+          <span class="review-rating">★★★★★</span>
+        </div>
+        <p class="review-text">หมวกสวยมาก ใส่สบาย ไม่ร้อน</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-form-container">
+    <h2>ข้อมูลการสั่งซื้อ</h2>
+    <form class="order-form">
+      <fieldset>
+        <legend>ข้อมูลส่วนตัวและที่อยู่จัดส่ง</legend>
+        <div class="form-group">
+          <label for="full-name">ชื่อ - นามสกุล</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="address">บ้านเลขที่, หมู่</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+          <label for="sub-district">ตำบล</label>
+          <input type="text" id="sub-district" name="sub-district" required>
+        </div>
+        <div class="form-group">
+          <label for="district">อำเภอ</label>
+          <input type="text" id="district" name="district" required>
+        </div>
+        <div class="form-group">
+          <label for="province">จังหวัด</label>
+          <input type="text" id="province" name="province" required>
+        </div>
+        <div class="form-group">
+          <label for="zip-code">รหัสไปรษณีย์</label>
+          <input type="text" id="zip-code" name="zip-code" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>รายละเอียดสินค้าและคำสั่งซื้อ</legend>
+        <div class="form-group">
+          <label for="product-details">รายการสินค้า</label>
+          <textarea id="product-details" name="product-details" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="purchase-date">วันที่ซื้อ</label>
+          <input type="date" id="purchase-date" name="purchase-date" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>วิธีการจัดส่งและชำระเงิน</legend>
+        <div class="form-group shipping-options">
+          <label>วิธีการจัดส่ง</label>
+          <div>
+            <input type="radio" id="delivery" name="shipping-method" value="delivery" checked>
+            <label for="delivery">จัดส่ง</label>
+            <input type="radio" id="pickup" name="shipping-method" value="pickup">
+            <label for="pickup">รับเอง</label>
+          </div>
+        </div>
+        <div class="form-group payment-options">
+          <label>ช่องทางการชำระเงิน</label>
+          <div>
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer" checked>
+            <label for="bank-transfer">โอนเงินผ่านธนาคาร</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="slip-upload">อัปโหลดสลิปการโอนเงิน</label>
+          <input type="file" id="slip-upload" name="slip-upload" accept="image/*" required>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="submit-button">submit</button>
+    </form>
+  </div>
+</body>
+</html>
